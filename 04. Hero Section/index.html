@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a7bb81e7bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hero Section</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      #hero-section {
+        min-height: 80vh;
+        background: linear-gradient(to right, #eee,#333);
+        display: flex;
+        justify-content: space-between;
+        padding: 12% 10%;
+      }
+      .intro-part {
+        width: 50vw;
+        padding-top: 6%;
+      }
+      .intro-part h3 {
+        color: #035d69;
+        font-weight: 500;
+      }
+      .intro-part h1 {
+        font-size: 36px;
+      }
+      .intro-part h1> span {
+        color: #035d69;
+      }
+      .btns {
+        margin-top: 20px;
+      }
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .contact-btn {
+        background-color: #035d69;
+        color: white;
+      }
+      .contact-btn:hover {
+        color: #035d69;
+        background-color: white;
+      }
+      .hire-btn {
+        background-color: white;
+        color: #035d69;
+      }
+      .hire-btn:hover {
+        color: white;
+        background-color: #035d69;
+      }
+      .image-part img {
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 250px;
+      }
+      @media screen and (max-width: 936px) {
+        .intro-part {
+          width: 40vw;
+        }
+        .intro-part h3 {
+          font-size: 14px;
+        }
+        .intro-part h1 {
+          font-size: 24px;
+        }
+      } 
+      @media screen and (max-width: 738px) {
+        #hero-section {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+        .intro-part {
+          width: 100%;
+          text-align: center;
+        }
+        .image-part img {
+          width: 200px;
+        }
+      }
+        
+      
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="hero-section">
+        <div class="intro-part">
+          <h3>Frontend Developer</h3>
+          <h1>Hi, My name is <span>Asadullah</span></h1>
+          <p>I am pursuing my Bachelor's Degree in Information Technology.</p>
+          <div class="btns">
+            <button class="contact-btn btn">Contact Me</button>
+            <button class="hire-btn btn">Hire Me</button>
+          </div>
+        </div>
+        <div class="image-part">
+          <img src="me.png" alt="Me">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

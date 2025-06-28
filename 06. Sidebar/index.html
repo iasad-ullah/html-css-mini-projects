@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a7bb81e7bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sidebar</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      .sidebar {
+        width: 20%;
+        height: 100vh;
+        background-color: #ccc;
+        position: fixed;
+        padding: 10px;
+      }
+      .sidebar ul {
+        height: 40%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .sidebar ul li {
+        border-bottom: 1px solid #9c9b9b;
+        width: 100%;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        display: block;
+        color: black;
+        padding: 10px;
+      }
+      .sidebar ul li i {
+        margin-right: 10px;
+      }
+      @media screen and (max-width: 478px) {
+        .sidebar {
+          display: none;
+        }
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+          <li><a href=""><i class="fa fa-user"></i>About</a></li>
+          <li><a href=""><i class="fa fa-cogs"></i>Services</a></li>
+          <li><a href=""><i class="fa fa-envelope"></i>Contact</a></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
